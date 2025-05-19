@@ -70,7 +70,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     
     func searchYouTube(for query: String) {
-        let apiKey = "AIzaSyCT3CM6yiovN-F_6dBkgPXaIWp9hpVeyK8" // kendi key'inle değiştir!
+        let apiKey = "API_KEY"
         let queryEncoded = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         let urlString = "https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=10&q=\(queryEncoded)&key=\(apiKey)"
 
